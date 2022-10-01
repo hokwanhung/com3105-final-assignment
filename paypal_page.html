@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/Paypal page.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   </head>
+
+<body onload="document.querySelector('#amt').value = opener.document.querySelector('#totsold').value;">
+
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+	 <div class="container">
+     <div class="title">Payment Page</div></br>
+     <div class="content">  
+             <form>	
+					<input id="amt" type="text" value = "0.03"></br></br>
+					<div id="paypal-button-container"></div>
+                    </div>
+	 
+</form>
+
+<script>
+      paypal.Buttons({
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: document.querySelector("#amt").value 
+              }
+            }]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+           
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                var transaction = orderData.purchase_units[0].payments.captures[0];
+                alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+          });
+        }
+      }).render('#paypal-button-container');
+
+    </script>
+  </body>
+</html>
