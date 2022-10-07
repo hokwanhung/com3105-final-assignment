@@ -46,6 +46,24 @@ nav ul li a {
     text-transform: capitalize;
 }
 
+
+/*
+header nav ul li a::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d93e6f;
+}
+
+header nav ul li a:hover::after {
+    width: 50%;
+}
+*/
+
 nav ul li a:hover {
     color: #d93e6f;
     transition: 4s;
