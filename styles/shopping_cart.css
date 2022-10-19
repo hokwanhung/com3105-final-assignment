@@ -31,6 +31,10 @@ body {
     position: relative;
 }
 
+span {
+    color: #d93e6f;
+}
+
 .container .title::before {
     content: "";
     left: 0;
@@ -43,7 +47,7 @@ body {
 
 form .button {
     height: 45px;
-    margin: 35px 0
+    margin: 35px 0;
 }
 
 form .button input {
@@ -83,4 +87,8 @@ form .button input:hover {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
     vertical-align: middle;
+}
+
+.footer {
+    font-size: 9px;
 }
