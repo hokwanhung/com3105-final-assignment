@@ -13,6 +13,11 @@ body {
     align-items: center;
     padding: 10px;
     background: linear-gradient(135deg, #cda141, #944764);
+    /*
+    background: rgba(0, 0, 0, 0.7)url(../images/background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    */
 }
 
 .container {
