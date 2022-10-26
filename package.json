@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "mime": "^3.0.0",
+    "url": "^0.11.0"
+  }
+}
