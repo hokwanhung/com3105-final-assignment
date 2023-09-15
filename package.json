@@ -1,4 +1,9 @@
 {
+  "name": "com3105-final-assignment",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "argon2": "^0.30.2",
     "express": "^4.18.2",

@@ -30,6 +30,8 @@ PRIMARY KEY (cust_id)
 
 desc customer;
 
+-- sample data of customers
+
 INSERT INTO customer VALUES (null, 'cust1', '$argon2id$v=19$m=51200,t=4,p=6$iGXgwH+cZqUqr/Ehg8tplA$PYR8fpd8qfXUHWwqkpDcB2lXqYUCOjPfS55vDslDgo7J3krLbNRngw', 'cust1@xyz.com', 'Cust1', '415-123-4567', 5000),
 (null, 'cust2', '$argon2id$v=19$m=51200,t=4,p=6$IBHvwYTFUDFFHXF4lIB+Lw$4oKsQevJYo+C9obVw5EithaqD+YyqLUr0YXhIvKDn2UB9GSmbgMXhg', 'cust2@xyz.com', 'Cust2', '415-234-5678', 6000),
 (null, 'cust3', '$argon2id$v=19$m=51200,t=4,p=6$gr2MfVAC9jtu65MLM4OeLw$h1KuJ6spZuwibdFxiLPGVvYq5FdoTOhMhBMtpxCzhR692DaGKhzuQw', 'cust3@xyz.com', 'Cust3', '415-345-6789', 5000),

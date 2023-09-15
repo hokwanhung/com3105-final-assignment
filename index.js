@@ -6,6 +6,7 @@
 
 const mysql = require("mysql");
 const connection = mysql.createConnection({
+	// Require modifications if changes are made in MySQL.
 	host: "localhost",
 	user: "user99",
 	password: "user99",

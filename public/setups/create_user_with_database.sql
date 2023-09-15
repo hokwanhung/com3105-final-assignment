@@ -1,5 +1,5 @@
 --
---	one time use only
+--	one time use only (this sql should be used first)
 --
 -- To run:
 --	1. start mysql: go to cmd as Administrator, enter 'net start mysql80'
