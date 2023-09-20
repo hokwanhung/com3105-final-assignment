@@ -72,7 +72,7 @@ com3105-final-assignment
 
 To run the code, both `node.js` and `MySQL Workbench` is required. 
 
-For `node.js`, navigate to where the main folder `com3105-final-assignment are`, and use any command-line interpreter applications, e.g., `cmd`, to initiate the below commands:
+For `node.js`, navigate to where the main folder `com3105-final-assignment` are, and use any command-line interpreter applications, e.g., `cmd`, to initiate the below commands:
 
 - `npm install`: To install the required packages listed in `package.json`. A folder containing the required packages, named `node_modules` and a `JSON` file named `package-lock.json` will be created.
   - `npm update`: To update the required packages and `package-lock.json`to its latest version.
